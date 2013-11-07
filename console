@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -t -i -p 5000:3000 $DOCKER_LOGIN/rails-getting-started /bin/bash

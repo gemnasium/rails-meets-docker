@@ -1,0 +1,4 @@
+#!/bin/bash
+docker commit -author="Fabien Catteau" \
+  -run '{"Cmd": ["/start"], "PortSpecs": ["3000"], "User": "rails"}' \
+  $1 $DOCKER_LOGIN/rails-getting-started-pirate

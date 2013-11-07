@@ -1,0 +1,2 @@
+#!/bin/bash
+docker push $DOCKER_LOGIN/rails-getting-started
