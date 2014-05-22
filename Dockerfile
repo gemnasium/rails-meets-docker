@@ -19,6 +19,9 @@ RUN adduser --disabled-password --home=/rails --gecos "" rails
 #  and it is clean; see the "prepare" script
 ADD docrails/guides/code/getting_started /rails
 
+# Make sure we have rights on the rails folder
+RUN chown rails -R /rails
+
 # copy and execute the setup script
 # this will run bundler, setup the database, etc.
 ADD scripts/setup /setup
